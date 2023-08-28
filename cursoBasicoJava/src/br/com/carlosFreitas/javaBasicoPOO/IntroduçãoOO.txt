@@ -1,0 +1,117 @@
+package br.com.carlosFreitas.javaBasicoOO;
+//Introducao nome da classe
+public class IntroduçãoOO {
+/*
+*Forma Geral
+* Definição de classes
+* Atributos
+* Criação de objetos
+* */
+//  Forma Geral de uma Classe
+//  variáveis de instância - atributos
+    int var1;
+    int var2;
+    int var3;
+
+//    declaracao de métodos
+    void metodo1 (int parametros){
+//        corpo método
+    }
+
+    void metodo2 (int parametros){
+//        corpo método
+    }
+
+    void metodo3 (int parametros){
+//        corpo método
+    }
+
+}
+
+Recaptulando o conheciomento introdução a Orientação a objetos.
+Porque a orientação objeto surgiu, é muito mais fácil, imaginar uma entidade
+conceitos de projetos, do que fazer programação estruturada até o momento feito no
+curso foi programação estruturada, fizemos um algoritmo tudo dentro de um programa
+Java, e foi uma programação estruturada, algora vamos começar a trabalhar com programação
+orientada a objetos.
+Aonde imaginamos entidade do nosso mundo, entidades que queremos utilizar no nosso projeto,
+como objetos, e estes objetos a declaração, definição chamamos de classe, e uma classe ela
+tem qualidades que chamamos de atributos, que serão as variáveis desta classe, e existem os
+métodos que são formas de ações, más nem sempre são ações.
+Quando vamos explicar orientação objeto pela primeira vez, para uma pessoa que numca ouviu falar
+é um pouco complicado, na explicação ideal o que realmente seria.
+No começo vamos ver neste curso, ou em algum livro a declaração de objeto sendo:
+A definição de uma entidade onde está entidade tem caracteristicas, que são os atributos
+que pode executar ações, que seria os métodos.
+Até o final deste modulo vamos perceber que o objeto é muito mais que isto.
+EXEMPLIFICANDO
+Carro
+Atributos - caracteristicas que um carro pode ter.
+cor
+marca
+modelo
+número de passageiro
+capacidade do tanque de combústivel
+consumo de combústivel por KM
+
+Como traduzimos está informações para uma classe do Java.
+//objeto
+class Carro{
+//atributos
+    String marca;
+    String modelo;
+    int numPassageiro; //numero de passageiro
+    double capCombustivel; //capacidade do tanque de combustivel
+    double consumoCombustivel; //consumo de combustivel por KM
+}
+No momento que damos a vida a este objeto a abstração para o mesmo,
+ou seja o objeto carro pode ter varias marcas.
+Criação dos objetos.
+Carro van = new Carro();
+van.marca = "Fiat";
+van.modelo = "Ducato";
+van.numPassageiros = 10;
+van.capCombustivel = 100;
+van.consumoCombustivel = 0.2;
+A forma de como vamos utilizar e setar valor dentro da classe.
+Como iremos executar o objeto da classe Carro.
+package br.com.carlosFreitas.javaBasicoOO;
+
+public class TesteCarro {
+    public static void main(String[] args) {
+        Carro van = new Carro();
+        van.marca = "Fiat";
+        van.modelo = "Ducato";
+        van.numPassageiros = 10;
+        van.consCombustivel = 0.2;
+
+        System.out.println(van);
+
+    }
+}
+//saida
+br.com.carlosFreitas.javaBasicoOO.Carro@1d251891
+Carro@1d251891 é o endereço de memória aonde está alocado este objeto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+Herança palavra chave super.
+Como a plavra chave this, que faz referencia a caracteristica ou ação da própria
+classe em caso de herança temos uma palavra chave especifica para fazer acesso a 
+super classe que é exatamente a palavra super.
+
+Dentro da classe Filha crie um construtor com a palavra chave
+super.
+public class Aluno extends Pessoa{
+
+	public Aluno() {
+		super();
+	}
+}
+Ele vai chamar o construtor da super classe.
+
+Na classe Super crie construtor vazio como boas praticas para classe
+de construtor com campos.
+O construtor vazio como a classe Pessoa não herda de nenhuma outra classe
+ele vai herdar de Object.
+
+public Aluno() {}
+
+public Aluno(String nome, String endereco, String telefone, String curso) {
+		super(nome, endereco, telefone);
+		this.curso = curso; 
+		/*dentro do construtor podemos fazer referencia a super classe usando
+		*através do this.
+		*/
+	}
+	
+O Super sempre utilizamos quando vamos fazer acesso a Super Classe
+	

@@ -1,0 +1,50 @@
+Recursividade
+Criar métodos recursivos
+Recursividade o vida de programador tem uma tirinha sobre,
+Tipo um quadrinho falando do mesmo quadrinho.
+No java é tipo um método chamando ele mesmo tendo um ponto de parada.
+Fatorial de um número.
+5! = % * $ * # * @ * !
+
+Métodos não recursivo
+public int calculaFatorial(int num){
+    int total = 1;
+    for(int i = num, i > 1; i--){
+        total *= i;
+    }
+    return total;
+}
+
+Métodos recursivo
+public int fatorial(int num){
+    if(num == 0){ // até ele chegar a 0 e retornar 1
+        return 1;
+    }
+    return num * fatorial(num - 1); //chamando o próprio método
+}
+
+Com este resultado vamos retornando o resultado do anterior
+Para métodos recursivos o computador utiliza uma estrutura de dados
+chamado Pilha, o funcionamento é mesma coisa que uma Pilha de pratos,
+O primeiro que entra é o último que sai.
+E no final ele começa de desempilhar até limpar a pilha.
+A vantagem de utilizar metodos recursivos é muito mais fácil lendo o
+metodo e muito facil de ler a partir da linha.
+Geralmente mais facil de entender e não significa que a performace será
+melhor que o algoritmo nao recursivo.
+Muito utilizado em estrutura de dados, em algoritmos de arvores, e grafos.
+Olhando em Threads no modo Debug podemos ver o metodo recursivo empilhando
+a operação aritmetica cada vez que o metodo esta sendo chamado e chegando
+ao ponto de parada ele desenpilha e retorna o valor.
+
+
+
+
+
+
+
+
+
+
+
+

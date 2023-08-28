@@ -1,0 +1,73 @@
+Exceptions tipos de Erros no Java.
+Erros e Excessões.
+			 Object
+			   ^
+			   |
+			   |
+			Throwable
+			    ^
+				|
+				|
+  |----------------------------|
+Error				        Exception
+                               ^   
+unchecked                      |
+                               |
+checked                        |unchecked
+IOException             RuntimeException    
+SQLException			       |
+                    	       |--------------------|
+                    	                            |
+                    ArrayIndexOutBoundsException<---|
+                    NullPointerException <----------|
+                    ArithmeticException <-----------|
+                    ClassCastException <------------|
+
+Qual a diferença entre erros e exception?
+Qual a diferença entre excessões verificadas e não verificadas?
+
+A super classe de todas as classes do Java é Object.
+A super classe de erros e excessões é a classe Throwable.
+De baixo da classe Throwable temos as classes filhas Erro, Exception.
+
+Qual a diferença entre Erro e Exception?
+Erro é um erro que vai aconteçer em tempo de execução, e vai fazer
+com que o programa termine a sua execução.
+Ex: OutOffMemoryError, fazer um for e tentar instânciar vários elemento
+e tem um limite de memória para JVM, este tipo de Erro é um erro não verificado
+e não tem como tratar no Java.
+
+Exception conseguimos tratar.
+E existem dois tipos as checked verificadas, unchecked não verificadas.
+Unchecked são as exceptions que aconteçem em tempo de execução do programa
+ou seja é as que chamamos de RuntimeException.
+ArrayIndexOutBoundsException
+ArithmeticException
+NullPointerException
+ClassCastException
+Não tem como o compilador prever isto somente quando em tempo de compilação
+tiver um problema naquele código se der certo blz, senão ele lança excessão.
+Tipo 
+if(obj != null){
+	//faça este bloco
+}
+Este tipo de exception ocorre quando tentamos executar um obj que ainda não foi instânciado
+por exemplo.
+ClassCastException vimos ocorrer, na aula de casting upcasting, dowcasting, o que podemos fazer
+é colocar nosso código dentro de um bloco try, cactch capturar e tratar.
+checked
+IOException acesso de leitura ou escrita de arquivo.
+SQLException de SQL.
+O compilador vai identificar e reclamar pedir para você tratar ali na hora.
+
+Keep Calm and Speak English
+Mantenha a Calma e fale Ingles.
+htt://java.mn/2014/02/23/ler-ingles/
+
+
+
+
+
+
+
+

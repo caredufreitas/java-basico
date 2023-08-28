@@ -1,0 +1,39 @@
+Sobrecarga de métodos e construtores (overload) sobreposição
+Este método é chamado sobreposição ou sobrecarga em ingles overload
+Sobrecarga de métodos
+public class MinhaCalculadora{
+    public int soma(int num1, int num2){
+        return num1 + num2;
+    }
+
+    public int soma(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
+
+    public double soma(double num1, doubl2 num2){
+        return num1 + num2;
+    }
+}
+Simplesmente declarar mais métodos com mesmo nome
+e assinatura do método pode ser diferente.
+E podemos quantidade de parametros passado por parametro
+diferentes.
+E podemos manter o mesmo tipo de retorno ou mudar porém os
+parametros de entrada tem que ser diferentes.
+
+Sobrecarga de construtores
+
+public Carro(String marca,
+            String modelo,
+            int numPassageiro,
+            double capCombustivel,
+            double consumoCombustivel){
+
+    this.marca = marca;
+    this.modelo = modelo;
+    this.numPassageiro = numPassageiro;
+    this.capCombustivel = capCombustivel;
+    this.consumoCombustivel = consumoCombustivel;
+}
+
+Fazendo a combinação de atributos que precisamos iniciar.

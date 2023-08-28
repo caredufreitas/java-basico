@@ -1,0 +1,26 @@
+Modificadores public e private
+De acesso.
+public todo mundo pode ver.
+private somente a propria classe
+default outros pacotes não tem acesso.
+
+public class Carro {
+
+}
+Esta classe ela está publica qualquer outra classe pode ver,
+Se formos em qualquer outro pacote podemos instânciala.
+Então quando começamos a organizar o projeto podemos ter que uma classe
+de outro pacote queira utilizar está classe.
+Para este caso ter um modificador de acesso faz a diferença ela não contendo
+o public na frente ela somente será visivél dentro do mesmo pacote.
+Quando ele é padrão default só é vísivel no próprio pacote.
+Os atributos também acontece a mesma coisa não tendo visibilidade ele
+não será exibido em outros pacotes.
+private é a maneira que declaramos dentro da classe, agente precisa expor
+alguns atributos para que outras classes possa fazer acesso a estes atributos,
+coisa comum os métodos declaramos vizualização como public para outras classes
+tenha acesso para eles.
+
+No eclipse autocomplite triangulo é default, bolinha verde publico, outline na barra de
+tarefas você vê tudo que foi declarado na classe.
+quadrado vermelhor é privado.

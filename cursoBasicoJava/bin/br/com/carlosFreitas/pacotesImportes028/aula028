@@ -1,0 +1,52 @@
+Pacotes e importes
+Pacotes e organização do código
+Palavra chave import
+Cada pacote é um icone de pacote e temos o curso organizado,
+para exercicios temos um subdiretório para organizar o projeto em dar manutenção
+fica muito mais fácil para organizar o código e estetica também.
+Convensão Java
+Sempre em lowercase (letra minúscula)
+Domínio da empresa ao contrário +
+br.com.dominio.subdiretorio
+Nome do projeto + (opcional - evitar colisão)
+Pastas para organizar
+
+Quando não tem pacote nunhum o nome do pacote é default.
+Alguns outros exemplos de projeto usa arquitetura MVC, para organizar o código
+fonte.
+
+Import de classes Java.
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+Organizado exatamento assim, java, frameworks, classes.
+
+import br.com.carlosFreitas.carro; este é um importe padrão.
+Carro car = new Carro(); utilizado em uma instância de uma classe.
+
+import br.com.carlosFreitas.carro.Carro carro; tipo de especificação do pacote.
+Assesando todas as classes
+Exer06 exer06;
+
+Obtendo acesso a todos os pacotes
+import br.com.carlosFreitas.curso.*; colocando o * na frente para ter acesso a todos os pacotes.
+Não é muito elegante ou bonito, trabalhando com auxilio da IDEA ir importando a classe que precisamos
+fica bem explicíto, o que estamos importando.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+Vamos relembrar um pouco sobre heranca e palavra chave abstract.
+Animal
+nome: Caractere
+emitirSom(): Caractere
+^			^ É um
+|           |----------------
+| É um                      |
+Ave							Mamifero
+voar(): Caractere			amamentar(): Caractere
+^							^					^
+|							| É um				| É um
+| É um						|					|--------|
+Papagaio					Cachorro					Gato
+voar(): Caractere			tamanho: Caractere			raca: Caractere
+emitirSom(): Caractere		raca: Caractere				amamentar(): Caractere
+							amamentar(): Caractere		emitirSom(): Caractere
+
+Diagrama de classes
+O triângulo verde dentro das classe o que representa classes ABS metade da 
+bolinha.
+
+As classes que estende um classe abstrata elas precisam implementar os métodos
+porém se estás classe também forem abstratas, não vai ter problema, porque?
+Porque elas também são abstratas e não precisa implementar e quem vai implementar estes
+métodos é a primeira classe que não for abstrata.
+
+
+A classe Ave e Mamifero elas não tem atributos que são especificos a essas
+classes, tem somente métodos abstratos e a classe também é abstratas, quando temos
+uma classe abstrato sem nenhum atributo somente métodos abstratos podemos transformar
+está classe em interface.
+Interface é este conceito.
+É uma classe abstrata que contém métodos abstratos.
+Para que usariamos Interface no Java ao contrário do C++, nós não conseguimos estender duas
+classes, no caso assim se eu quiser colocar que o Gato é um Mamifero e uma Ave por exemplo no Java
+não conseguimos fazer isto.
+Então no Java a maneira que temos de Implemetar uma Classe com comportamento de diferentes classes,
+é através de uma Interface.
+Então por exemplo a Interface vai definir qual é o comportamento que aquela classe precisa implementar
+e ela apenas define a assinatura.
+Exemplo classe AnimalEstimacao.
+public interface AnimalDomesticado {
+
+	void alimentar();
+	void levarVeterinario();
+	void chamarVeterinario();
+}
+Todos os métodos de uma interface eles são publicos e abstratos então não 
+precisa declarar visibilidade e nem palavra chave abstract.
+Só contém métodos abstratos nesta classe.
+Não podem ter um corpo especifico.
+
+Atributos interfaces.
+Interfaces não tem atributus são todos constantes.
+public final int ANO = 2016;
+
+
+Muito comum ver em projetos Interface com várias constantes e como dentro de uma Interface 
+já é pública, abstrata não precisa declarar visibilidade, palavra chave abstract.
+
+
+
+
+
+
+
+

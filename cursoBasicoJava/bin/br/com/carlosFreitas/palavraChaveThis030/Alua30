@@ -1,0 +1,57 @@
+Palavra chave this
+
+Carro(String marca_, String modelo_){
+    marca = marca_;
+    modelo = modelo_;
+}
+O underscor por mais que possa sendo usado não é muito
+elegante e antigo, quando tiramos fica confuso para agente
+e para referenciar o atributo das classe usamos a palavra
+chave this, fica muito mais claro.
+
+Carro(String marca, String modelo){
+    this.marca = marca;
+    this.modelo = modelo;
+}
+
+this referencia atributos e médotos da própria classe.
+Uma outra maneira de referenciar o this também.
+
+
+//construtor com parametros
+Carro(String marca, String modelo){
+    this.marca = marca;
+    this.modelo = modelo;
+}
+//construtor simples e vazio
+Carro(){
+    this("Fiat", "Uno");
+}
+Este tipo de referência o construtor, é para referenciar
+o construtor com parâmetros, é muito legal na teoria porém não muito
+utilizado no dia a dia dos projetos, dentro de um construtor fazer
+referencia a outro construtor.
+
+Referenciando os métodos
+Para deixar bem explicito que os métodos da classe é da própria
+classe usamos a referência.
+
+void exibirAutonomia(){
+    System.out.println("A autonomia do carro é: " + this.obterAutonomia() + "km. ");
+}
+
+double obterAutonomia(){
+    return this.capCombustivel * this.consumoCombustivel;
+}
+
+
+
+
+
+
+
+
+
+
+
+

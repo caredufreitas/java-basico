@@ -1,0 +1,39 @@
+Herança Polimorfismo sobrecarga de métodos
+
+Criamos a classe Pessoa esta classe é Mãe ou Pai das classes Aluno e Professor.
+Aluno tem seus atributos especificos cursos, notas e seus metodos calcularMedia(), verificarAprovado()
+Professo tem seus atributos especificos departamento, nomeCurso, salario, e seu metodo calcularSalarioLiquido()
+Pessoa tem seus atributos iguais referentes ambas as classes Aluno e Professor.
+A ideia do Polimorfismo se pergarmos o significado da palavra Poli -> muitas, morfismo -> formas, no Java 
+significa que uma coisa pode ter muitas formas em nossas classes são os métodos.
+Em sobrecarga de métodos e construtores aprendemos uma forma de polimorfismo, foi o polimorfismo em tempo
+de compilação, nesta aula criamos vários construtores com vários parametros e métodos com o mesmo nome e
+assinaturas diferentes, parametros com tipos diferentes ou tipos de retorno diferentes também.
+
+Polimorfismo em tempo de execução.
+
+Pessoa pessoa = new Pessoa(); //tipo da Super classe
+Pessoa aluno = new Aluno();
+Pessoa professor = new Professor();
+
+pessoa.obterEtiquetaEndereco();
+aluno.obterEtiquetaEndereco();
+professor.obterEtiquetaEndereco();
+
+Todos eles com a mesma assinatura quantidade de parametro e tipo de retorno
+se chamarmos estes três métodos o que acontece.
+public String obterEtiquetaEnderecao() {
+		return this.endereco;
+	}
+Por motivo da herança Aluno e Professor vai ter acesso a este método e quando pedimos para 
+imprimir ele retorna o que foi setado.
+
+Agora vamos Sobrescrever este método obterEtiquetaEndereco() em Aluno.
+
+É isto que é o polimorfismo como Aluno Professor é uma Filha de Pessoa quando chamado o 
+metodo sobrescrito da super classe o compilador em run time saberá de onde chamar o método
+pela instância.
+
+
+
+

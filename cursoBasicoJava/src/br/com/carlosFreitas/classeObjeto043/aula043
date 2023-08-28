@@ -1,0 +1,125 @@
+Classe Object.
+A classe mãe ou pai de todas as classes do Java.
+Acessando a documentação do Java podemos ver como as 
+classes do Java está organizado hierarquicamente.
+http://docs.oracle.com/javase/8/docs/api/java/lang/package-tree.html
+Class Hierarchy
+java.lang.Object
+java.lang.Boolean (implements java.lang.Comparable<T>, java.io.Serializable)
+java.lang.Character (implements java.lang.Comparable<T>, java.io.Serializable)
+java.lang.Character.Subset
+java.lang.Character.UnicodeBlock
+java.lang.Class<T> (implements java.lang.reflect.AnnotatedElement, java.lang.reflect.GenericDeclaration, java.io.Serializable, java.lang.reflect.Type)
+java.lang.ClassLoader
+java.lang.ClassValue<T>
+java.lang.Compiler
+java.lang.Enum<E> (implements java.lang.Comparable<T>, java.io.Serializable)
+java.lang.Math
+java.lang.Number (implements java.io.Serializable)
+java.lang.Byte (implements java.lang.Comparable<T>)
+java.lang.Double (implements java.lang.Comparable<T>)
+java.lang.Float (implements java.lang.Comparable<T>)
+java.lang.Integer (implements java.lang.Comparable<T>)
+java.lang.Long (implements java.lang.Comparable<T>)
+java.lang.Short (implements java.lang.Comparable<T>)
+java.lang.Package (implements java.lang.reflect.AnnotatedElement)
+java.security.Permission (implements java.security.Guard, java.io.Serializable)
+java.security.BasicPermission (implements java.io.Serializable)
+java.lang.RuntimePermission
+java.lang.Process
+java.lang.ProcessBuilder
+java.lang.ProcessBuilder.Redirect
+java.lang.Runtime
+java.lang.SecurityManager
+java.lang.StackTraceElement (implements java.io.Serializable)
+java.lang.StrictMath
+java.lang.String (implements java.lang.CharSequence, java.lang.Comparable<T>, java.io.Serializable)
+java.lang.StringBuffer (implements java.lang.CharSequence, java.io.Serializable)
+java.lang.StringBuilder (implements java.lang.CharSequence, java.io.Serializable)
+java.lang.System
+java.lang.Thread (implements java.lang.Runnable)
+java.lang.ThreadGroup (implements java.lang.Thread.UncaughtExceptionHandler)
+java.lang.ThreadLocal<T>
+java.lang.InheritableThreadLocal<T>
+java.lang.Throwable (implements java.io.Serializable)
+java.lang.Error
+java.lang.AssertionError
+java.lang.LinkageError
+java.lang.BootstrapMethodError
+java.lang.ClassCircularityError
+java.lang.ClassFormatError
+java.lang.UnsupportedClassVersionError
+java.lang.ExceptionInInitializerError
+java.lang.IncompatibleClassChangeError
+java.lang.AbstractMethodError
+java.lang.IllegalAccessError
+java.lang.InstantiationError
+java.lang.NoSuchFieldError
+java.lang.NoSuchMethodError
+java.lang.NoClassDefFoundError
+java.lang.UnsatisfiedLinkError
+java.lang.VerifyError
+java.lang.ThreadDeath
+java.lang.VirtualMachineError
+java.lang.InternalError
+java.lang.OutOfMemoryError
+java.lang.StackOverflowError
+java.lang.UnknownError
+java.lang.Exception
+java.lang.CloneNotSupportedException
+java.lang.InterruptedException
+java.lang.ReflectiveOperationException
+java.lang.ClassNotFoundException
+java.lang.IllegalAccessException
+java.lang.InstantiationException
+java.lang.NoSuchFieldException
+java.lang.NoSuchMethodException
+java.lang.RuntimeException
+java.lang.ArithmeticException
+java.lang.ArrayStoreException
+java.lang.ClassCastException
+java.lang.EnumConstantNotPresentException
+java.lang.IllegalArgumentException
+java.lang.IllegalThreadStateException
+java.lang.NumberFormatException
+java.lang.IllegalMonitorStateException
+java.lang.IllegalStateException
+java.lang.IndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException
+java.lang.StringIndexOutOfBoundsException
+java.lang.NegativeArraySizeException
+java.lang.NullPointerException
+java.lang.SecurityException
+java.lang.TypeNotPresentException
+java.lang.UnsupportedOperationException
+java.lang.Void
+Interface Hierarchy
+java.lang.Appendable
+java.lang.AutoCloseable
+java.lang.CharSequence
+java.lang.Cloneable
+java.lang.Comparable<T>
+java.lang.Iterable<T>
+java.lang.Readable
+java.lang.Runnable
+java.lang.Thread.UncaughtExceptionHandler
+Annotation Type Hierarchy
+java.lang.SafeVarargs (implements java.lang.annotation.Annotation)
+java.lang.Override (implements java.lang.annotation.Annotation)
+java.lang.Deprecated (implements java.lang.annotation.Annotation)
+java.lang.SuppressWarnings (implements java.lang.annotation.Annotation)
+java.lang.FunctionalInterface (implements java.lang.annotation.Annotation)
+Enum Hierarchy
+java.lang.Object
+java.lang.Enum<E> (implements java.lang.Comparable<T>, java.io.Serializable)
+java.lang.ProcessBuilder.Redirect.Type
+java.lang.Character.UnicodeScript
+java.lang.Thread.State
+
+
+Se a classe não estende nenhuma outra classe automáticamente ele estende a classe Object.
+
+
+
+
+

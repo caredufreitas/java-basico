@@ -1,0 +1,46 @@
+Definição da classe Carro e seus Atributos
+
+class Carro{
+    String marca;
+    String modelo;
+    int numPassageiros; //número de passageiros
+    double capCombustivel; // capacidade do tanque de combustível
+    double consumoCombustivel; // consumo de combustível por KM.
+}
+
+Atributos é descrição das propriedades da classe.
+Métodos é ação.
+
+Método simples sem retorno e parametro.
+void exibirAutonomia(){
+    System.out.println("A autonomia do carro é: " + capCombustivel + consumoCombustivel + " KM");
+
+}
+Método com retorno
+obtendo a informação e com este valor vamos exibir esta mensagem na tela.
+Nos métodos com retorno ao invés de utilizarmos o void vamos utilizar o tipo
+daquele método vai retornar.
+
+double obterAutonomia(){
+    return capCombustivel * consumoCombustivel;
+}
+
+E podemos ter da mesma forma qualquer lógica de programação.
+Métodos com parametros
+
+double calculaCombustivel(double km){
+    return km / consumoCombustivel;
+}
+Vamos colocar quais são os parametros que queiramos declarar dentro dos métodos
+e dentro dos métodos nós teremos informações, daquela classe e podemos chamar,
+outros métodos e chamar os atributos.
+Quando é que vamos passar um parametro para o método quando uma informação não estiver
+disponível na classe.
+
+
+
+
+
+
+
+

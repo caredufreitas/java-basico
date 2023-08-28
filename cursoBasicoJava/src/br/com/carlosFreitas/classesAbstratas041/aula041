@@ -1,0 +1,59 @@
+Classes abstratas
+Exemplos da aula anterior:
+Pessoa pessoa = new Pessoa();
+Pessoa aluno = new Aluno();
+Pessoa professor = new Professor();
+
+São as três classes que declaramos e tanto Aluno e Professor
+e neste caso a classe Pessoa é a super classe.
+Tanto Aluno e Professor estão estendendo Pessoa e como declaramos
+public class Pessoa, public class Aluno, public class Professor nós 
+podemos instânciar tanto a classe Pessoa, Aluno, Professor porém se na
+declaração da classe incluimos a palavra chave abstract nós não vamos 
+conseguir instânciar a classe Pessoa.
+
+public abstract class Pessoa{
+}
+Vai dar erro, é exatamente isso o conceito de classe abstrata.
+Quando inserimos esta palavra chave abstrata na declaração da classe
+que dizer que está classe não pode ser intânciada diretamente.
+Ela apenas pode ser estendidas por outras classes e as outras classes
+podem ser instânciadas no caso Aluno e Professor.
+
+Pessoa pessoa = new Pessoa();
+Pessoa aluno = new Aluno();
+Pessoa professor = new Professor();
+Até aqui nada demais podemos declara uma instância de uma classe,
+classe com tipo diferente.
+Pessoa aluno = new Aluno(); //insância de uma classe com o tipo diferente.
+Pessoa professor = new Professor();
+
+Porém se voltarmos na classe Pessoa e anotar ela com a palavra chave
+abstrata voltando para classe de execução.
+Vai dar um erro cannot instantiate,  não pode ser instanciada.
+Somente as classes filhas podem ser insânciadas.
+Também pode colocar esta palavra chave abstract para que as classes 
+filhas tenham o método implementado;
+
+public abstract String obterEtiquetaEndereco();
+Sem o corpo do método;
+1 method to implement:
+	- br.com.carlosFreitas.classesAbstratas041.Pessoa.
+	 imprimirEtiquetaEndereco()
+	
+Add to method
+	@Override, anotação 
+	public void imprimirEtiquetaEndereco() {
+		//TODO Auto generated method stub
+	}
+	
+he type Professor must implement the inherited abstract method Pessoa.imprimirEtiquetaEndereco()
+Este é o conceito da classe abstrata você apenas define não pode tornar realidade, classes não podem
+ser instânciadas, métodos tem que ser sobrescrito.
+
+
+
+
+
+
+

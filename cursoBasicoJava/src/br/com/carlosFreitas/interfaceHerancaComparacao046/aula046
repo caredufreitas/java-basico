@@ -1,0 +1,31 @@
+Interface e Herança (Comparação)
+Painel comparativo entre Interface e Herança
+Pergunta sobre programação Java.
+Existe herança multipla em Java, não Java não permite estender mais de uma 
+classe.
+Porém o Java permite que Interface estenda outra Inerface, existe herança multiplas
+de Interface.
+Criando um Banco de dados
+Banco de dados podemos abrir conexão e fechar conexão para obter informações 
+do Banco de Dados.
+DCL -> Dar acesso e remover este acesso, representado no diagram de Classe SqlDCL.
+grant(String): Void
+revoke(String): Void
+DDL -> Acesso criar tabelas, alterar tabelas, dropar tabelas - SqlDDl
+create(String): Void
+drop(String): Void
+alter(String): Void
+DML -> Por fim acesso mais comuns ao acesso BD que são as query.
+alter(String): Void
+insert(String): Void
+update(String): Void
+delete(String): Void
+select(String): Void
+
+Banco de dados NoSql ele não cria tabela.
+E uma Interface implementa todas as interfaces, e a primeira
+classe que implementar a Interface Mae vai sobrepor todos os metodos
+
+Implementacao parcial.
+Interface é assinatura de comportamento que queremos colocar em nossa
+classe.

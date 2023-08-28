@@ -1,0 +1,25 @@
+Exceptions finally.
+Palavra chave finally.
+finally -> finalmente.
+try{
+ Bloco monitorado para erros vai tentar o bloco
+ se tudo tiver bem é lançado.
+}catch(TipoDaException1 exc){
+	Tratamento de erro 1, pegar o erro da excessão.
+}catch(TipoDaException2 exc){
+	Tratamento de erro 2, pegar o erro da excessão.
+}finally{
+	Executado após o try ou catch.
+	
+}
+Geralmente nos projetos Java utilizamos try e catch, o que vamos ver na
+maioria de códigos na internet, porém em situações especificas quando estamos
+trabalhando com arquivos onde precisamos.
+Abrir o arquivo
+Realizar leitura
+Ocorre erro
+Fecha arquivo no finally
+Então trabalhando com arquivos realizando a leitura com sucesso e capturando
+os erros agente precisa de fechar este arquivo, é no finally.
+Muito comum também em BD abrir conexão, fechar conexão pode ser que aconteça
+idependete, precisamos fechar a conexão utilizamos o bloco finally.

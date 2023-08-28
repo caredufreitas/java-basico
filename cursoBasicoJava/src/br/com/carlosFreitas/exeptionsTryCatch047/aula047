@@ -1,0 +1,31 @@
+Exceptions try, catch
+Tratamento de exceções no Java.
+Palavras-chave desse módulo.
+try, catch, throw, throws e finally.
+Para esta aula try e catch
+try -> lançar
+catch -> pegar
+// tentando acessar posicao do array que não existe.
+
+		int[] vetor = new int[4];
+		System.out.println("Antes da exception. ");
+		vetor[4] = 1;
+		System.out.println("Este texto não será impresso. ");
+		
+Exception
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at br.com.carlosFreitas.exeptionsTryCatch047.Excecao.main(Excecao.java:8)
+
+	A execucao foi interrompida.
+try bloco manipulado para erros, catch o que ele quer pegar
+execessão no Java também é um tipo de objeto.
+
+Não tratar erros faz com que o programa pare de executar.
+Tratar erros.
+Permite que o programa execute uma determinada lógica caso o erro ocorra.
+Permitem que o programa continue a execução.
+
+
+
+
+

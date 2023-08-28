@@ -1,0 +1,57 @@
+Exception multiplos catch.
+Capturar multiplas execões ao mesmo tempo.
+
+
+		int[] numeros = {4, 8, 16, 32, 
+				64, 128};
+		int[] denominador = {2, 0, 4, 8, 0};
+		
+		for(int i = 0; i < numeros.length; i++) {
+			try { // não tem a necessidade de coloca o tratamento da excessao fora do for pois esta linha esta dando erro
+				System.out.println(numeros[i] + " / " + denominador[i] + " = " + (numeros[i] / denominador[i]));
+			} catch (ArithmeticException excessao) {
+				System.out.println("Erro ao dividir por 0. ");
+			} catch (ArrayIndexOutOfBoundsException index){
+				System.out.println("Erro index fora para o tamanho");
+				. ");
+			} catch (Throwable exc) { // para capturar exeções genericas que não sabemos o que pode acontecer.
+				System.out.println("Aconteçeu um erro. ");
+			}
+		}
+		Para tratar outras excessoes podemos ter vários blocos catch um atrás do
+		outro.
+		A classe Throwable ela é a super classe do todas as classes de exeptions do Java.
+		Não é bloco catch aninhado pois não está dentro do outro.
+		
+		
+Erros genéricos 
+Multi-catch de exceptions (mesma família)
+
+		int[] numeros = {4, 8, 16, 32, 
+		int[] denominador = {2, 0, 4, 8, 0};
+		
+		for(int i = 0; i < numeros.length; i++) {
+			try { // não tem a necessidade de coloca o tratamento da excessao fora do for pois esta linha esta dando erro
+				System.out.println(numeros[i] + " / " + denominador[i] + " = " + (numeros[i] / denominador[i]));
+			} catch (ArithmeticException | ArrayIndexOutBoundsException exc) {
+				System.out.println("Erro ao dividir por 0. ");
+			} 
+		}
+Pertencem uma família similar e podemos agrupar numa mesma exception,
+nota importânte só é possível ser executado depois da versão Java 5
+anterior separadamente.
+A ordem da excesssão é lançada na ordem que está declarada, a prioridade é sempre
+do catch que é lançado primeiro.
+Quando coloca uma exeção mais generica como Throwable ele vai dar erro por ser mais genérica.
+
+
+
+
+
+
+
+
+
+
+
+

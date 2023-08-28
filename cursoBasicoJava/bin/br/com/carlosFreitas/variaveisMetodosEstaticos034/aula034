@@ -1,0 +1,84 @@
+Variáveis e metodos estáticos
+Como utilizar modificador static.
+
+public class MinhaCalculadora{
+
+    public int soma(int num1, int num2){
+        return num1 + num2;
+    }
+
+    public int soma(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
+
+    public double soma(double num1, double num2){
+        return num1 + num2;
+    }
+
+}
+
+Teste MinhaCalculadora
+public class TesteMinhaCalculadora{
+    public static void main(String[] args){
+        MinhaCalculadora calculadora = new MinhaCalculadora();
+        int soma! = calculadora.soma(1, 2);
+        System.out.println(soma1);
+        int soma2 = calculadora.soma(1, 2, 3);
+        System.out.println(soma2);
+    }
+}
+
+Se olharmos para este código não faria muito sentido, se olharmos para os
+métodos não estamos utilizando nenhuma lógica de programação, na classe calculadora
+a calculadora, se fossemos declarar uma classe calculadora por exemplo teria botões,
+a lista de operações que está calculadora pode exercer, em fim colocar alguns métodos
+de soma ou subtração não faz muito sentido, ter que existir uma instância desta classe,
+para nós podermos utilizar estes métodos, e é por isto que o modificador static, existe
+então por exemplo.
+
+Se voltarmos para a declaração desta classe.
+public class MinhaCalculadora{
+    public static int soma(int num1, int num2){
+        return num1 + num2;
+    }
+
+    public static int soma(int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
+
+    public static double soma(double num1, double num2){
+        return num1 + num2;
+    }
+}
+Entre o public e o tipo primitivo estamos colocando o modificador static,
+o modificador static não precisamos de uma instância da classe, para poder acessar
+um método ou poder acessar uma variável, então se agente voltar depois de aplicar
+o modificador static, agente teria algo do tipo basta colocar o nome da classe, ponto
+a chamada do método que teriamos acesso aquela variável.
+Exemplo claro que utilizamos métodos static em alguns exercicios, foi a classe Math,
+principalmente quando agente foi, quando agente estava aprendendo a programação básica
+do java, em if, for, vetores etc...
+Utilizamos a classe Math em correções dos exercicios, os métodos desta classe Math eles
+são métodos estáticos, além do mais está classe também tem outras váriaveis estáticas,
+atributos estáticos, onde você não precisa da instância da classe para poder acessar,
+por exemplo o valor do PI.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

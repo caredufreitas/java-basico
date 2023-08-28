@@ -1,0 +1,56 @@
+Palavra chave final tanto em classes e atributos em atributos eles viram constantes.
+
+public final class Pessoa {}
+Adicionando a palavra chave final outras classe que herda de Pessoa quebra
+qual motivo.
+1 - Quando formos estender uma classe ela não pode ser do tipo final na árvore ela vai ser folha.
+2 - 
+
+Exemplo mais comum que temos em java é da classe String.
+
+public class MinhaString extends String {}
+Classe String ela não é tipo primitivo ela é uma classe
+ela tem métodos auxiliares, quando vimos polimorfismo e sobrescrever e mudar
+o comportamento do método.
+Imagina se algum desenvolvedor estender a classe String e mudar o comportamento
+de um método, inteiramente pode quebrar todo o projeto e não funcionar nada mais.
+Existe a possíbilidade de você ter classes finais, para nínguem poder estender e modificar
+o seu comportamento, se você quiser utilizar aqueles comportamentos você precisa utilizar
+a própria classe.
+Então este é o conceito da palavra chave final em classes;
+
+Palavra chave final em atributos. 
+final String valorImutavel = "Valor Inicial";
+valorImutavel = "novoValor";
+
+Modificador final em váriavel não pode ser mudado ele é imutável
+é muito conhecido em línguagem de programação como constantes.
+Em projetos Java geralmente vai ser uma classe Constantes, 
+
+public final class Constantes {
+	public static final String URL_BLOG = "http://loiane.com";
+	public static final String URL_CURSO_COMPLETO = "http://loiane.training";
+}
+É batata que vai ter uma classe desta com várias contantes para todas as classes
+utilizar.
+Para facilitar coloca o static para acessar com o nome da classe e nome do atributo.
+
+Boas prátivas para nomear constantes em Java.
+Todas em caixa alta e quando muda de palavra separa com underscore.
+public final class Constantes {
+// nínguem vai poder estender esta classe
+	public static final String URL_BLOG = "http://loiane.com";
+	public static final String CURSO_COMPLETO = "http://loiane.training";
+	
+}
+
+
+
+
+
+
+
+
+
+
+

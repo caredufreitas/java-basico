@@ -1,0 +1,111 @@
+Herança
+public class Aluno 
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String cpf;
+	
+public class Professor 
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String cpf;
+Nas duas classes temos os quatro primeiros atribuitos iguais
+neste caso podemos adicionar uma terceira classe que contenha estas
+informações e podemos transferir para uma classe mãe.
+
+public class Pessoa
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String cpf;
+	
+Ao utilizar herança em orienteção objeto ambas as classes Aluno, Professor, 
+herdam estas informações, as classes Aluno e Professor continua obtendo os
+atributos nome, endereco, telefone, cpf.
+Só que por exemplo se tivesse que inserir informação que fosse comum as duas classes
+ao invés de adicionar em cada uma dessas classes o novo atributo, como por exemplo telefone
+celular teria que fazer isto nas duas classes, aqui com a herança criando a classe Pessoa poderia
+adicionar, o atributo telefone celular somente na classe Pessoa, e automaticamente a classe Aluno, 
+classe Professor herda esta informação.
+Além da questão de herdar informação de uma outra classe, uma informação é muito importante, nós
+aprendemos na aula passada, os relacionamentos tem um, tem muitos onde nós utilizamos uma classe java
+dentro da outra, aqui na herança é importante destacar que o relacionamento entre as classes, Aluno, Pessoa e
+Professor e Pessoa, é um relacionamento é um, está palavra é muito importante podemos falar que Aluno é uma Pessoa
+e Professor é uma Pessoa para juntar estas caracteristicas.
+
+	
+extends para mostrar que estamos fazendo o uso de herança, estendendo a classe Pessoa
+public class Aluno extends Pessoa
+public class Professor extends Pessoa
+Como os atributos da classe Pessoa está em privado as classes Aluno, Professor não terá
+acesso aos atributos somente aos metodos.
+Uma das vantagens de se usar orientação objetos se tiver que fazer manutenção no sitema
+você pode fazer em lugares especificos, como a classe Pessoa ela é a pai de Aluno e Professor
+qualquer aumento de caracteristica ou ações podem ser feita nelas.
+
+COMERN
+Confiavel
+Oportuno
+Manutenivel
+Estencivel
+Reutilizavel
+Natural
+
+Pessoa é super classe da classe Aluno;
+Podemos instânciar deste tipo.
+
+Pessoa aluno = new Aluno();
+aluno.getNome();
+Só que desta maneira não terá acesso aos atributos especificos do Aluno, está declarando a super classe.
+quando fazer isto tem acesso a informações que são comuns a Pessoa.
+
+Pessoa professor = new Professor();
+professor.getNome();
+
+Exite duas formas de utilizar a herança, ou você declara o tipo da classe mesmo
+e dentro você terá as caracteristicas da Super classe e da classe Filha ou você declara
+o tipo da Super classe ao invés de declarar a classe do tipo.
+Declarando a super classe é muito utilizado em polimorfismo.
+
+Para destacar a herança é um tipo de relacionamento é um, é uma e vimos no slide anterior
+as informações comuns, nome, endereço, telefone, cpf, é importante destacar o relacionamento
+é um, é uma, ai temos uma classe chamado Cachorro, pois o cachorro pode ter endereço, telefone, nome,
+mais ai está o cuidado de você extender para uma classe Pessoa, ele não se classifica como uma pessoa
+e sim um animal.
+Mau uso de código.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	

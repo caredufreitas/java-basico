@@ -1,0 +1,66 @@
+Construtores
+Simples e vazio o java por padrão ele já oferece, isto por causa o objeto
+chamado object, como se criasse um metodo sem retorno ou parametros algum.
+Caso precise inicializar os atributos utilizamos o construtor.
+Se existe um valor padrão para todas as classes, agente coloca dentro do construtor.
+
+Carro(){
+    numPassageiros = 4;
+}
+
+Construtor com parâmetro
+
+Carro(String marca_, String modelo_){
+    marca = marca_;
+    modelo = modelo_;
+}
+Passamos todos os atributos no construtor da classe.
+public class TesteCarro {
+    public static void main(String[] args) {
+
+        Carro van = new Carro();
+        van.marca = "Fiat";
+        van.modelo = "Ducato";
+        van.numPassageiros = 10;
+        van.capCombustivel = 100;
+        van.consumoCombustivel = 0.2;
+
+
+    }
+}
+Este código aqui é a mesma coisa de ter
+  //    construtor simples e vazio
+    Carro(){
+        System.out.println("Classe carro foi instânciada. ");
+        this.numPassageiros = 4;
+    }
+
+Podemos ter quantos construtores quisermos na classe desde
+que seja assinatura diferente.
+    // construtor com parametro
+    Carro(String marca_, int numPassageiros_, double capCombustivel_, double consumoCombustivel_){
+        this.marca = marca_;
+        this.numPassageiros = numPassageiros_;
+        this.capCombustivel = capCombustivel_;
+        this.consumoCombustivel = consumoCombustivel_;
+    }
+
+  Instânciando o código fica muito mais limpo
+  //        inicializando classe com todos os parametros
+          Carro van2 = new Carro(
+                  "Fiat",
+                  10,
+                  100,
+                  0.4);
+          van2.modelo = "Ducato";
+          System.out.println(van2.marca);
+          System.out.println(van2.modelo);
+          System.out.println(van2.numPassageiros);
+          System.out.println(van2.capCombustivel);
+          System.out.println(van2.consumoCombustivel);
+      }
+
+Boas praticas sempre que crie um construtor com paramentros
+crie um construtor vazio também.
+
+

@@ -1,0 +1,15 @@
+Herança modificadores de acesso
+protected modificador de acesso protegido.
+O que é visivel ou não é visivel em classes filhas.
+
+String nomeVisibilidade; somente dentro do pacote
+public nomeVisibilidade; liberou geral mesmo fora do pacote
+private somente dentro da propria classe nem através de herança temos visibilidade.
+protected protegido dentro da Super classe e classes filhas não importando o pacote
+use sua instância sendo filha pode ver.
+
+
+No intelicence.
+Quadrado vermelho - private
+bolinha verde - publico
+triangulo azul - pacote, pasdrão.

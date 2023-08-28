@@ -1,0 +1,21 @@
+Relacionamento entre classes tem um tem muitos
+Declara o relacionamento tem um, relacionamento tem muitos.
+Exemplo
+Contato               1
+- nome    String
+- endereco String
+- telefone String
+
+Endereco              1
+- nomeRua       String
+- numero        String
+- complemento   String
+- cep           String
+- cidade        String
+- estado        String
+
+Telefone            1
+- tipo          String
+- ddd           String
+- numero        String
+

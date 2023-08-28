@@ -1,0 +1,93 @@
+Exceptions, stacktrace e throws.
+Classe Throwable.
+Classe mãe de todas as exceptions.
+Possui métodos úteis.
+Está classe é a super classe dos erros e exceptions do Java
+Como super classe ela possui muitos métodos que 
+são herdados por todas as sub classes da classe trowable.
+Declare uma exception e veja todos os métodos.
+getMessage();
+printStackTrance() -> em qual linha daquela classe onde
+aconteceu o erro.
+Capiturando uma exception um erro generico.
+
+Não usar:
+try{
+	System.out.printl(numero[i] + " / " + denom[i] + " = " + (nomero[i] / denom[i]));
+}catch(Throwable exc){
+	System.out.printl(exc.getMenssage());
+	exc.printStackTrance();
+}
+
+E sim:
+try{
+	System.out.printl(numero[i] + " / " + denom[i] + " = " + (nomero[i] / denom[i]));
+}catch(Exception exc){
+	System.out.printl(exc.getMenssage());
+	exc.printStackTrance();
+}
+Estamos interessados nas exception lançado no programa.
+int[] numeros = {4, 8, 16, 32, 64, 128};
+		int[] denominador = {2, 0, 4, 8, 0};
+		
+		for(int i = 0; i < numeros.length; i++) {
+			try { // não tem a necessidade de coloca o tratamento da excessao fora do for pois esta linha esta dando erro
+				System.out.println(numeros[i] + " / " + denominador[i] + " = " + (numeros[i] / denominador[i]));
+			} catch (Exception e) {
+				System.out.println(e.getMessage()); // ainda não é muito útil.
+				e.printStackTrace(); // algo melhor para o desenvolvedor mostrando a linha.
+				/* em prjetos reais é colocado em log, e não tendo como 
+				 * log4j, bibliotecas para criar arquivo de log.
+				 * em produção olhamos o log
+				 * */
+			} 
+		}
+Então é sempre importante fazer o tratamento das exceptions no Java.
+Error: resulta na finalização do programa.
+Exception: possível tratar o erro e continuar execução do programa.
+
+Jogando para um arquivo de log, por um desenvolvedor ou equipe de suporte.
+
+Palavra chave Throws. (Utilizado para quando não queremos tratar a exception, 
+quando não queremos colocar ali o try, catch em nosso método, agente quer disparar a excessão casso ocorra
+e passar para quem for utilizar o método tratar aquela excessão).
+
+Método pode disparar uma Exception.
+Passa a responsábilidade pra quem for utilizar o método.
+Esceptions disparadas em temp de execução (ArrayOutBounds. Arithmetic) não
+necessitam de throws explicitamente.
+(Elas não precisa ser verificadas elas não precisa do Throws explicitamente 
+como vimos a exception pode acontecer porém no momento não quisermos tratar a exception
+podemos passar ela para frente com Throws para o método que for usar tratar a exception).
+Muito útili quando estamos construindo API ou trabalhando com JavaWeb porque geralmente não ficamos
+tratando estas exceptions em todo o canto do código, exite um lugar especifico onde podemos tratar estás
+excessões onde podemos passar uma mensagem melhor para o usuário.
+
+
+Entrada inválida. 
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at br.com.carlosFreitas.ExceptionsStackTraceThrows050.UsandoThrows.lerNumero(UsandoThrows.java:34)
+	at br.com.carlosFreitas.ExceptionsStackTraceThrows050.UsandoThrows.main(UsandoThrows.java:19)
+	
+Isto é muito ruim aparecer para o usuário final mal intensionado usamos
+uma mensagem mais amigavél com getMessage(), printStackTrace() usamos para o registro no
+log questões de segurança.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

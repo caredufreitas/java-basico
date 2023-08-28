@@ -1,0 +1,81 @@
+Interface e Herança, Casting(conversão) + instanceOf
+Casting de objetos no java.
+Converter uma subclasse para o tipo superclasse ou vice-versa.
+Upcasting e Downcasting.
+É permitido porque temos heranca entre os objetos entre as classes e
+com isso agente consegue converter um subclasse para um tipo super classe
+ou vice-versa, e está conversão chama Upcasting e DownCasting.
+
+Aluno é uma subclasse de Pessoa.
+
+Aluno aluno = new Aluno(); // instância de aluno
+Object pessoa = aluno; // variável pessoa do tipo Object
+Object é a classe mãe ou classe pai de todas as classes do Java,
+e podemos fazer a variável pessoa receber a instância a referencia 
+da variável aluno.
+
+Isto seria um Upcasting.
+
+	Object           Upcasting
+	   ^				^
+	   |                |
+	   |                |
+	Pessoa              |  
+	^    ^              |
+	|    |              |
+Aluno    Professor      |
+                        +
+                     Downcasting
+                     
+Sendo Pessoa a super classe de Aluno e Professor, Object a super classe 
+de todas as classes Java, eu posso fazer uma variável do tipo Object receber 
+uma instância de Pessoa, Aluno, Professor.
+E também é possível pegar um Obejto Pessoa e receber um Aluno mais isto 
+pode trazer complicação.
+
+Upcasting
+Aluno aluno = new Aluno();
+Pessoa alunoPessoa = aluno; //upcasting
+
+Exemplo:
+Pessoa[] pessoas = new Pessoas[4]; // array de Pessoa
+pessoas[0] = alu01;
+pessoas[1] = alu02;
+pessoas[2] = alu03;
+pessoas[3] = alu04;
+
+Conversão é automático
+Não há necessidade de fazer manual, porém upcasting manual é permitido
+
+
+Como seria 
+Pessoa aluno = new Aluno();
+Pessoa aluno = (Pessoa) new Aluno();
+
+Downcasting
+Aluno aluno = new Aluno();
+Pessoa pessoaAluno = aluno;
+Aluno aluno02 = (Aluno) pessoaAluno; // downcasting
+
+è ao contrário declaramos um objeto da classe que está maior na árvore,
+e vamos tentar transformar este objeto em um tipo que está menor na árvore.
+
+Pessoa pessoa = new Pessoa();
+Aluno aluno = pessoa;
+
+
+Operador para ajudar na hora de fazer chamada de método e casting
+instanceOf(), verifica qual classe é do objeto.
+
+
+
+
+
+
+
+
+
+
+
+
+              
